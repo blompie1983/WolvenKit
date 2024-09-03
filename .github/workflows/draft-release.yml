@@ -101,7 +101,7 @@ jobs:
     # - run: echo "INSTALLER=${{env.NAME}}-installer-${{env.VERSION}}.exe" >> $GITHUB_ENV
 
     - name: Download artifacts
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
     # Create assets
     # create zip
     - run: sudo apt-get install zip -y
